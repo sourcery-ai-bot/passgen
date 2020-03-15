@@ -1,3 +1,4 @@
 # passgen
-python is 3.6.3 <br />
-i only created this to learn python basics
+I only created it to learn python basics
+
+used python version: 3.6.3
