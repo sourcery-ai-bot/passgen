@@ -15,16 +15,16 @@ class Password:
 
     def generate_list(self):
         password_list = []
-            
+
         for j in range (self.amount):
             password = ""
-            for i in range (self.size):
+            for _ in range (self.size):
                 nextchar = base[secrets.randbelow(len(base))]
                 while (nextchar in password):
                     nextchar = base[secrets.randbelow(len(base))]
                 password += nextchar
             password_list.append(password)
-        
+
         self.list = password_list
 
     def create_new_file(self):
@@ -79,10 +79,6 @@ while True:
             print('goodbye.')
             time.sleep(3)
             quit()
-        else:
-            pass
-        
-
     except ValueError:
             print('you can only type numbers, the program will now close.')
             time.sleep(5)
